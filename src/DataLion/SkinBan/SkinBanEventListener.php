@@ -30,7 +30,7 @@ class SkinBanEventListener implements Listener
     {
         $skinBan = SkinBanPlugin::getDataprovider()->getBanByUsername($player->getName());
         if(is_null($skinBan)) return false;
-        if($skinBan->getBannedUntil() < time())
+        if($skinBan->getBannedUntil() < time() && $skinBan->getBannedUntil() !== -1)
         {
             SkinBanPlugin::getDataprovider()->removeBan($skinBan);
             return false;

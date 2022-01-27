@@ -38,10 +38,10 @@ class SkinBanListCommand extends Command implements PluginOwned
         $bans = SkinBanPlugin::getDataprovider()->getBans();
         $sender->sendMessage("§4[§cSkinBan§4] §r§7SkinBan List");
         foreach ($bans as $ban) {
-            if($ban->getBannedUntil() === -1){
+            if($ban->getBannedUntil() !== -1){
                 $dateunban = gmdate($dateFormat, $ban->getBannedUntil());
             }else{
-                $dateunban = "never";
+                $dateunban = "Permanent";
             }
 
             $sender->sendMessage("§8- §7".$ban->getUsername()." §8| §7". $dateunban);
