@@ -1,2 +1,2 @@
 # SkinBan
-Be able to ban
+Be able to just ban a skin of a player.

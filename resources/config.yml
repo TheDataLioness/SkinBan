@@ -1,0 +1,12 @@
+# Database providers: sqlite, yaml
+dataprovider: sqlite
+
+# Skinbanned messsage on join or trying to change skin
+# VARIABLES:
+# - {player} - Player name
+# - {date} - Date and time when the ban expires or 'never'
+skinbanned_message: "§4[§cSkinBan§4] §cYou have been skinbanned. You won't be able to use your skin until {date}."
+
+# Date format for {date} variable.
+# See: https://www.w3schools.com/php/func_date_date_format.asp
+dateformat: "d-m-Y H:i:s"

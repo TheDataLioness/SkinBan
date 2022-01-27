@@ -1,0 +1,17 @@
+---
+name: SkinBan
+version: 1.0.0
+main: DataLion\SkinBan\SkinBanPlugin
+api: 4.0.0
+
+permissions:
+  skinban.command.skinban:
+    description: "Allows the user to skinban a player."
+    default: op
+  skinban.command.skinunban:
+    description: "Allows the user to skinunban a player."
+    default: op
+  skinban.command.skinbanlist:
+    description: "Allows the user to view the list of skinbanned players."
+    default: op
+...
