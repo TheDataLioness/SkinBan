@@ -59,9 +59,9 @@ class SkinBanPlugin extends PluginBase{
 
     private function registerCommands(): void
     {
-        $this->getServer()->getCommandMap()->register($this->getName(), new SkinBanCommand($this, "skinban", "Ban a player by skin", "/skinban <username> [days] [hours] [minutes]"));
-        $this->getServer()->getCommandMap()->register($this->getName(), new SkinUnbanCommand($this, "skinunban", "Unban a player by skin", "/skinunban <username>"));
-        $this->getServer()->getCommandMap()->register($this->getName(), new SkinBanListCommand($this, "skinbanlist", "List all banned players", "/skinbanlist"));
+        $this->getServer()->getCommandMap()->register($this->getName(), new SkinBanCommand($this, "skinban", "Skinban a player", "/skinban <username> [days] [hours] [minutes]"));
+        $this->getServer()->getCommandMap()->register($this->getName(), new SkinUnbanCommand($this, "skinunban", "Unskinban a player", "/skinunban <username>"));
+        $this->getServer()->getCommandMap()->register($this->getName(), new SkinBanListCommand($this, "skinbanlist", "List all skinbanned players", "/skinbanlist"));
     }
 
 }
