@@ -42,9 +42,17 @@ class SkinbanCommand extends Command implements PluginOwned
         $hours = $args[2] ?? null;
         $minutes = $args[3] ?? null;
 
-        if ($days === null || $hours === null || $minutes === null) {
+        if ($days === null) {
             $banTime = -1;
         }else{
+
+            if($hours === null){
+                $hours = 0;
+            }
+            if($minutes === null){
+                $minutes = 0;
+            }
+
             if(!is_numeric($days) || !is_numeric($hours) || !is_numeric($minutes)){
                 $sender->sendMessage("§4[§cSkinBan§4] §cPlease enter valid arguments.");
                 return;
