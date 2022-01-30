@@ -1,7 +1,7 @@
 # SkinBan
 Poggit: [![](https://poggit.pmmp.io/shield.state/SkinBan)](https://poggit.pmmp.io/p/SkinBan)
 
-Plugin to ban skins of a username.
+Plugin that is be able to disable a player's skin for moderation purposes.
 
 ### How does the plugin work?
 * You can simply ban a player's skin by using the command `/skinban <username>`.
